@@ -67,6 +67,10 @@ img {
   -ms-grid-columns: 50% 50%;
   grid-template-columns: 50% 50%; }
 
+.grid-template--4 {
+  -ms-grid-columns: 33.33% 33.33% 33.33%;
+  grid-template-columns: 33.33% 33.33% 33.33%; }
+
 .grid-column--4 {
   -ms-grid-columns: 25% 25% 25% 25%;
   grid-template-columns: 25% 25% 25% 25%; }
