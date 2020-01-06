@@ -19,6 +19,10 @@ h1,h2,h3,h4,h5,h6, a{
     font-family: $font-hs;
 }
 
+h4,h5{
+    font-size: 1.125em;
+}
+
 p{
     font-size: 1.125em;
     line-height: 1.5em;
@@ -60,8 +64,37 @@ img{
 
 // HEADER
 
+.header{
+    background:$header-background;
+    padding-top: 1.375em;
+    padding-bottom: 1.25em;
+}
+
+.logo-txt{
+    color: $white;
+}
+
 .grid-template--header{
     grid-template-columns: 25% calc(75% - .5em);
+}
+
+.header-menu{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-menu-li{
+    display:inline-block;
+}
+
+.header-menu-a{
+    font-size: 14px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    line-height: normal;
+    color: $white;
+    padding: 5px 5px 0 20px;
 }
 
 

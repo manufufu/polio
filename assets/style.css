@@ -14,6 +14,9 @@ h1, h2, h3, h4, h5, h6, a {
   font-weight: 900;
   font-family: "Montserrat", sans-serif; }
 
+h4, h5 {
+  font-size: 1.125em; }
+
 p {
   font-size: 1.125em;
   line-height: 1.5em;
@@ -49,6 +52,34 @@ img {
   -ms-grid-columns: 25% 25% 25% 25%;
   grid-template-columns: 25% 25% 25% 25%; }
 
+.header {
+  background: #1B2B3B;
+  padding-top: 1.375em;
+  padding-bottom: 1.25em; }
+
+.logo-txt {
+  color: #FFFFFF; }
+
 .grid-template--header {
   -ms-grid-columns: 25% calc(75% - .5em);
   grid-template-columns: 25% calc(75% - .5em); }
+
+.header-menu {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
+
+.header-menu-li {
+  display: inline-block; }
+
+.header-menu-a {
+  font-size: 14px;
+  font-weight: normal;
+  letter-spacing: 1px;
+  line-height: normal;
+  color: #FFFFFF;
+  padding: 5px 5px 0 20px; }
