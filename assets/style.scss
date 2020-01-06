@@ -19,7 +19,12 @@ h1,h2,h3,h4,h5,h6, a{
     font-family: inherit;
 }
 
-h4,h5{
+.h1, h1{
+    font-size: 3em;
+}
+
+.h4, h4,
+.h5, h5{
     font-size: 1.125em;
 }
 
@@ -135,12 +140,16 @@ img{
 
 // SECTION 1
 
+.section-1{
+    background: url("02-HomeSlider.jpg") 0px center fixed;
+}
+
 .slides{
     width: 100%;
     position: relative;
     display: block;
     height: 90vh;
-    background: url("02-HomeSlider.jpg") 0px center fixed;
+   
     display:flex;
     justify-content: center;
     align-items: center;
@@ -171,6 +180,37 @@ img{
     margin-top: 2.5em;
 }
 
+// SECTION 2
+
+.title-cont{
+    text-align: center;
+}
+
+.p--title-desc{
+    position: relative;
+    padding: 0 5em;
+    display: inline-block;
+    font-size: 1.25em;
+    font-style:italic;
+    margin-bottom: 1.6em;
+ &:before,
+ &:after{
+     display:inline-block;
+     content:"";
+     position: absolute;
+     top: 50%;
+     width: 4em;
+     border-bottom: 0.1em solid #1B2B3B;
+ }
+ 
+ &:before{
+     left:0;
+ }
+ &:after{
+     right: 0;
+ }
+
+}
 
 
 
