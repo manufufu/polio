@@ -294,6 +294,7 @@ img{
     z-index: 2;
     position: absolute;
     height: 100%;
+    text-align: center;
     &:hover{
         top: -100%;
     }
@@ -303,15 +304,64 @@ img{
     background-color: $gray-ec;
     border-top: 1px solid $gray-ec;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .surprise-box__back-box{
     background: none repeat scroll 0 0 #1B2B3B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     p{
         color: $white;
     }
 }
 
+.surprise-box__title{
+    font-size: 18px;
+}
+
+.icon{
+    width: 60px;
+    height: auto;
+}
+
+// SECTION 4    
+
+.section-4{
+    padding: 40px 0;
+}
+
+.section-4__spacing{
+    padding-top: 40px;
+}
+
+.year{
+    opacity: 0.2;
+    font-size:2.3125em;
+    &:hover{
+        opacity: 1;
+    }
+}
+
+.employ-history{
+    padding: 0.9375em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.center{
+    text-align: center;
+}
+
+.company{
+    font-size: 16px;
+}
 
 
 
