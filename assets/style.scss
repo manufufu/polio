@@ -147,10 +147,12 @@ img{
 // SECTION 1
 
 .section-1{
-    background: url("02-HomeSlider.jpg") 0px center fixed;
+    background: url("02-HomeSlider.jpg") center center no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.slides{
+.hero-slider{
     width: 100%;
     position: relative;
     display: block;
@@ -161,7 +163,7 @@ img{
     align-items: center;
 }
 
-.slides-text{
+.hero-slider_tx{
     text-align: center;
     margin-top: -5em;
 }
@@ -363,6 +365,76 @@ img{
     font-size: 16px;
 }
 
+
+// SECTION 5
+
+.section-5{
+    padding: 40px 0;
+}
+
+.skills-desc{
+    text-align: center;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0;
+}
+
+.skill-slider{
+    display:flex;
+    padding: 30px 30px 0;
+    width:100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.skill-slider_slide{
+    
+    position: relative;
+    height: 100%;
+    width: 100%;
+    svg{
+        width: 140px;
+        height: 140px;
+    }
+    &:hover{
+        .skill-slider_fader{
+            opacity: 1;
+        }
+    }
+}
+
+.skill-slider_svg-c{
+    background: $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-slider_fader{
+    position: absolute;
+    padding:10px 20px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    background: $black-hs;
+    border-radius: 5px;
+    width: 80%;
+    margin:0 auto;
+    transition: all 0.4s ease-in-out 0s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    p{
+        color: $white;
+    }
+}
+
+.section-6{
+    padding: 40px 0;
+}
 
 
 

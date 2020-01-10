@@ -156,10 +156,12 @@ img {
 }
 
 .section-1 {
-  background: url("02-HomeSlider.jpg") 0px center fixed;
+  background: url("02-HomeSlider.jpg") center center no-repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.slides {
+.hero-slider {
   width: 100%;
   position: relative;
   display: block;
@@ -175,7 +177,7 @@ img {
           align-items: center;
 }
 
-.slides-text {
+.hero-slider_tx {
   text-align: center;
   margin-top: -5em;
 }
@@ -408,4 +410,85 @@ img {
 
 .company {
   font-size: 16px;
+}
+
+.section-5 {
+  padding: 40px 0;
+}
+
+.skills-desc {
+  text-align: center;
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0;
+}
+
+.skill-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 30px 30px 0;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.skill-slider_slide {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.skill-slider_slide svg {
+  width: 140px;
+  height: 140px;
+}
+.skill-slider_slide:hover .skill-slider_fader {
+  opacity: 1;
+}
+
+.skill-slider_svg-c {
+  background: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skill-slider_fader {
+  position: absolute;
+  padding: 10px 20px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  background: #1B2B3B;
+  border-radius: 5px;
+  width: 80%;
+  margin: 0 auto;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -o-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+.skill-slider_fader p {
+  color: #FFFFFF;
+}
+
+.section-6 {
+  padding: 40px 0;
 }
