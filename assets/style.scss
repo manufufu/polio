@@ -377,6 +377,7 @@ img{
     font-size: 18px;
     line-height: 24px;
     margin: 0;
+    margin-bottom: 40px;
 }
 
 .skill-slider{
@@ -432,12 +433,70 @@ img{
     }
 }
 
+// SECTION 6
+
 .section-6{
     padding: 40px 0;
 }
 
+.filter-c{
+    margin-bottom: 44px;
+}
+.filter{
+    display:flex;
+    list-style: none;
+    justify-content: center;
+}
 
+.filter__blck{
+    display: inline-block;
+    margin-right: 22px;
+}
 
+.btn--white{
+    background: none;
+    border: 1px solid $black-hs;
+    color: $black-hs;
+    text-transform: uppercase;
+    font-weight: normal;
+}
 
+.btn--white--active{
+    background: $black-hs;
+    color: $white;
+}
+
+.project-flex{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    overflow: hidden;
+    &:hover{
+        .project-desc{
+            background: rgba(255,255,255,1);
+        }
+        .projet-img{
+            transition-duration: 0.8s;
+            opacity: .9;
+            transform: scale(1.2,1.2);
+        }
+    }
+}
+
+.projet-img{
+    transition-duration: 0.8s;
+    opacity: .2;
+    z-index: 1;
+} 
+
+.project-desc{
+    background: #efefef;
+    text-align: center;
+    padding: 8px 5px;
+    width: 100%;
+    background: rgba(241,241,241,.8);
+    z-index: 2;
+}
 
 
