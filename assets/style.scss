@@ -206,7 +206,7 @@ img{
      position: absolute;
      top: 50%;
      width: 4em;
-     border-bottom: 0.1em solid #1B2B3B;
+     border-bottom: 0.1em solid $black-hs;
  }
  
  &:before{
@@ -216,4 +216,42 @@ img{
      right: 0;
  }
 
+}
+
+.icon-cont{
+    background: $black-hs;
+    border: 2px solid $white;
+    padding: 1.5625em;
+    transition: all 0.4s ease-in-out 0s;
+    svg{
+        width: 2.5em;
+        height: auto;
+        fill: $white;
+    }
+    &:hover{
+        background: none;
+        border: 2px solid $black-hs;
+        transform: rotate(180deg);
+        svg{
+          stroke: $black-hs;
+          fill: $black-hs;
+        }
+    }
+}
+
+.t-icons{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 0.9375em;
+    text-align: center;
+}
+
+.t-icons__title{
+    margin: 10px 0 0 0;
+}
+
+.t-icons__tx{
+    margin: 10px 0;
 }

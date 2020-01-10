@@ -191,3 +191,47 @@ img {
     left: 0; }
   .p--title-desc:after {
     right: 0; }
+
+.icon-cont {
+  background: #1B2B3B;
+  border: 2px solid #FFFFFF;
+  padding: 1.5625em;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -o-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s; }
+  .icon-cont svg {
+    width: 2.5em;
+    height: auto;
+    fill: #FFFFFF; }
+  .icon-cont:hover {
+    background: none;
+    border: 2px solid #1B2B3B;
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg); }
+    .icon-cont:hover svg {
+      stroke: #1B2B3B;
+      fill: #1B2B3B; }
+
+.t-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 0 0.9375em;
+  text-align: center; }
+
+.t-icons__title {
+  margin: 10px 0 0 0; }
+
+.t-icons__tx {
+  margin: 10px 0; }
