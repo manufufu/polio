@@ -112,7 +112,7 @@ img{
     width: 100%;
     overflow: hidden;
     transition: all 1s;
-    z-index: 1;
+    z-index: 10;
 }
 
 .logo-txt{
@@ -263,6 +263,59 @@ img{
      right: 0;
  }
 }
+
+.section-3__spacing{
+    padding: 2.5em 0;
+}
+
+.surprise-box{
+    width: 90%;
+    margin: 0 auto;
+    height: 230px;
+}
+
+.surprise-box__back-box,
+.surprise-box__front-box{
+    width: 100%;
+    height: 100%;
+    padding: 20px 10px;
+}
+
+.surprise-box{
+    border: 10px solid rgba(0, 0, 0, 0.03);
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.surprise-box__scroller{
+    top: 0;
+    transition: top 0.6s ease 0s;
+    z-index: 2;
+    position: absolute;
+    height: 100%;
+    &:hover{
+        top: -100%;
+    }
+}
+
+.surprise-box__front-box{
+    background-color: $gray-ec;
+    border-top: 1px solid $gray-ec;
+    position: relative;
+}
+
+.surprise-box__back-box{
+    background: none repeat scroll 0 0 #1B2B3B;
+    p{
+        color: $white;
+    }
+}
+
+
+
+
+
 
 
 
