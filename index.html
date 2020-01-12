@@ -11,7 +11,6 @@
     <!-- <script src="assets/jquery-3.4.1.min.js" defer></script>
     <script src="assets/slick.min.js" defer></script>-->
     <script src="assets/frameworks.min.js" defer></script>
-    <script src="assets/isotope.js" defer></script>
     <script src="assets/script.js" defer></script>
 </head>
 
@@ -28,11 +27,10 @@
                 <ul class="header-menu">
                     <li class="header-menu-li"><a href="#" class="header-menu-a">HOME</a></li>
                     <li class="header-menu-li"><a href="#whoiam" class="header-menu-a">WHO I AM</a></li>
-                    <li class="header-menu-li"><a href="#" class="header-menu-a">MY SKILLS</a></li>
-                    <li class="header-menu-li"><a href="#" class="header-menu-a">SERVICES</a></li>
-                    <li class="header-menu-li"><a href="#" class="header-menu-a">WORK</a></li>
-                    <li class="header-menu-li"><a href="#" class="header-menu-a">THOUGHTS</a></li>
-                    <li class="header-menu-li"><a href="#" class="header-menu-a">CONTACT</a></li>
+                    <li class="header-menu-li"><a href="#experience" class="header-menu-a">EXPERIENCES</a></li>
+                    <li class="header-menu-li"><a href="#skills" class="header-menu-a">MY SKILLS</a></li>
+                    <li class="header-menu-li"><a href="#works" class="header-menu-a">WORKS</a></li>
+                    <li class="header-menu-li"><a href="#contact" class="header-menu-a">CONTACT</a></li>
                 </ul>
             </div>
         </div>
@@ -52,10 +50,10 @@
         </div>
     </section>
 
-    <section class="section-2">
+    <section class="section-2" id="whoiam">
         <div class="container">
             <div class="p-title">
-                <h2 class="p-title__h2" id="whoiam">WHO I AM</h2>
+                <h2 class="p-title__h2">WHO I AM</h2>
                 <p class="p-title__p">Solid comms, project milestones and regular updates.</p>
             </div>
 
@@ -273,7 +271,7 @@
             </div>
     </section>
 
-    <section class="section-4">
+    <section class="section-4" id="experience">
         <div class="container">
             <div class="p-title">
                 <h2 class="p-title__h2">EXPERIENCES</h2>
@@ -302,8 +300,8 @@
         </div>
     </section>
 
-    <section class="section-5">
-        <div class="cotainer">
+    <section class="section-5" id="skills">
+        <div class="container">
             <div class="p-title">
                 <h2 class="p-title__h2">MY SKILLS</h2>
                 <p class="p-title__p">multidisciplinary, strategists & creative coders.</p>
@@ -530,7 +528,7 @@
         </div>
     </section>
 
-    <section class="section-6">
+    <section class="section-6" id="works">
         <div class="container">
             <div class="p-title">
                 <h2 class="p-title__h2">SOME OF MY WORKS</h2>
@@ -540,58 +538,46 @@
                 <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et </br> voluptates molestiae non recusandae. Debitis aut rerum necessitatibus saepe eveniet ut et </br>voluptates molestiae non recusandae.</p>
             </div>
             <div class="filter-c">
-               <ul class="filter">
-                   <li class="filter__blck"><button class="btn btn--white btn--white--active">All</button></li>
-                   <li class="filter__blck"><button class="btn btn--white">MPA</button></li>
-                   <li class="filter__blck"><button class="btn btn--white">SPA</button></li>
+               <ul class="filter-btns">
+                   <li class="filter__blck"><button class="btn btn--white btn--white--active" data-filter="*">All</button></li>
+                   <li class="filter__blck"><button class="btn btn--white" data-filter="MPA">MPA</button></li>
+                   <li class="filter__blck"><button class="btn btn--white" data-filter="SPA">SPA</button></li>
                </ul>
             </div>
         </div>
         <div class="projects">
            <div class="grid grid-column--4">
-                <div class="project-flex">
+                <div class="project-flex" data-filter-name="*">
                     <img class="projet-img" src="https://via.placeholder.com/250x" alt="">
                     <div class="project-desc">
                         <h3 class="project-title">Title</h3>
                     </div>
                 </div>
-                <div class="project-flex">
+                <div class="project-flex" data-filter-name="*">
                     <img class="projet-img" src="https://via.placeholder.com/250x" alt="">
                     <div class="project-desc">
                         <h3 class="project-title">Title</h3>
                     </div>
                 </div>
-                <div class="project-flex">
+                <div class="project-flex" data-filter-name="MPA">
                     <img class="projet-img" src="https://via.placeholder.com/250x" alt="">
                     <div class="project-desc">
                         <h3 class="project-title">Title</h3>
                     </div>
                 </div>
-                <div class="project-flex">
+                <div class="project-flex" data-filter-name="MPA">
                     <img class="projet-img" src="https://via.placeholder.com/250x" alt="">
                     <div class="project-desc">
                         <h3 class="project-title">Title</h3>
                     </div>
                 </div>
-                <div class="project-flex">
+                <div class="project-flex" data-filter-name="SPA">
                     <img class="projet-img" src="https://via.placeholder.com/250x" alt="">
                     <div class="project-desc">
                         <h3 class="project-title">Title</h3>
                     </div>
                 </div>
-                <div class="project-flex">
-                    <img class="projet-img" src="https://via.placeholder.com/250x" alt="">
-                    <div class="project-desc">
-                        <h3 class="project-title">Title</h3>
-                    </div>
-                </div>
-                <div class="project-flex">
-                    <img class="projet-img" src="https://via.placeholder.com/250x" alt="">
-                    <div class="project-desc">
-                        <h3 class="project-title">Title</h3>
-                    </div>
-                </div>
-                <div class="project-flex">
+                <div class="project-flex" data-filter-name="SPA">
                     <img class="projet-img" src="https://via.placeholder.com/250x" alt="">
                     <div class="project-desc">
                         <h3 class="project-title">Title</h3>
@@ -602,41 +588,164 @@
 
     </section>
 
-    <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea quas similique non repellendus temporibus. Pariatur
-        est, accusamus quos sit repellat maxime reprehenderit consequuntur mollitia! Eveniet, magni. Alias laudantium,
-        dignissimos, incidunt dolore voluptatum fugiat quam consectetur impedit obcaecati nobis officia, saepe sequi
-        accusamus necessitatibus. Odit magnam amet illo in, neque aliquam optio. Nam optio, rem alias debitis at impedit
-        aut aliquam. Ipsa illum labore, fuga exercitationem quod maiores iste! Libero error similique, nihil cupiditate
-        tempora quae, fugiat ipsum deserunt eum officia autem molestias delectus facere eligendi consectetur nemo ipsa
-        iure illo esse atque cumque. Voluptatum recusandae repellendus vero illum ducimus temporibus beatae sunt facilis
-        reprehenderit, velit minus iste quis quam nesciunt, eveniet ullam iusto dolorem ex error aliquam, a sed nostrum
-        earum. Iure, mollitia accusamus, quas amet earum, at modi rem consequuntur soluta porro sint! Iusto neque
-        accusantium quas ex vero dolorem ducimus quo repudiandae illo voluptas repellendus illum quidem necessitatibus
-        amet officiis id quibusdam sit harum dolorum iure, praesentium pariatur autem impedit? Temporibus nemo esse
-        provident odio eligendi aspernatur aliquid natus optio totam sint cum deleniti possimus, ipsa, fugit dignissimos
-        blanditiis ipsam quisquam sequi minus pariatur velit ex quos quasi maxime? Fugit sit blanditiis officia
-        voluptate ad possimus temporibus rem at necessitatibus et laboriosam ullam veniam aut recusandae amet
-        dignissimos fugiat autem est nisi, harum sequi. Assumenda itaque mollitia necessitatibus eaque veritatis
-        molestias, magni sunt. Labore earum sunt tempore dignissimos autem, corrupti qui esse praesentium dolorum.
-        Dicta, nisi? Recusandae officia magnam accusamus eveniet error dolores consectetur a cupiditate necessitatibus
-        maxime corrupti inventore ut doloremque, asperiores autem, laborum rem quasi aspernatur sed. Sunt cum accusamus,
-        possimus eum voluptatibus nisi voluptates sequi, adipisci eos ex ad rem dolorum soluta. Quae blanditiis labore
-        fugit incidunt nam possimus odit modi sint quos tenetur ipsam hic eum quisquam esse, consequatur tempore!
-        Reiciendis aliquid debitis repellat optio consequuntur esse alias ipsum inventore dolores unde obcaecati quidem
-        odio minima consequatur est, cumque, eos facilis adipisci ullam! At blanditiis fugit adipisci ipsa impedit nisi.
-        Earum, nihil magnam. Voluptas modi culpa ab quam deleniti officiis suscipit, nostrum, quaerat, porro dolor harum
-        perferendis. Distinctio nesciunt aliquam eius iusto cumque eaque voluptatibus fugiat? Voluptatum sed, magnam,
-        assumenda distinctio quia error, aperiam saepe ipsum molestias repudiandae dignissimos nisi quam iure. Aliquam
-        fuga nam natus! Provident dolorem cum ut consequatur sit repudiandae harum rerum accusantium quas iusto
-        consequuntur impedit ipsa, odit voluptatem odio quis omnis distinctio vel amet perferendis aut similique
-        corrupti! Nisi aspernatur id, illum amet mollitia alias ea dignissimos repudiandae, maiores voluptates et error
-        modi nostrum facilis in? Culpa eligendi voluptatem, atque, rem officia optio velit aperiam molestiae autem
-        quaerat architecto quisquam quidem? Laboriosam in labore autem id nemo amet quod provident esse. Dolorum ex et
-        sequi, voluptatem laboriosam, porro tenetur quas eveniet ratione ipsam aperiam. Deleniti eius accusantium quis.
-        Officiis ipsa, voluptatem possimus ullam, nemo maiores laborum quae aspernatur nesciunt cumque reprehenderit
-        doloremque magnam! Maiores quis consequuntur libero, cumque amet similique labore error quidem sequi. Sapiente
-        asperiores repellendus saepe non explicabo, unde necessitatibus quod quas voluptatum praesentium! Labore, nisi
-        animi?</h1>
+    <section class="section-7" id="contact">
+        <div class="container">
+            <div class="p-title">
+                <h2 class="p-title__h2">SAY HELLO</h2>
+                <p class="p-title__p">Feel free to give me a call on 01227 392710 or simply use the form below.</p>
+            </div>
+        </div>
+
+        <div class="contact">
+            <form class="contact-form">
+                <ul class="contact-ul">
+                    <li class="contact-ul__li">
+                        <label class="contact-label" for="name">Name</label>
+                        <input class="contact-input" id="name" name="name" placeholder="Name" required="" type="text">
+                    </li>
+                    <li class="contact-ul__li">
+                        <label class="contact-label" for="business-name">Business Name</label>
+                        <input class="contact-input" id="business-name" name="business-name" placeholder="Business Name" type="text">
+                    </li>
+                    <li class="contact-ul__li"> 
+                        <label class="contact-label" for="email">Email Address</label>
+                        <input class="contact-input" id="email" name="email" placeholder="Email Address" required="" type="email">
+                    </li>
+                    <li class="contact-ul__li">
+                        <label class="contact-label" for="phone">Phone Number</label>
+                        <input class="contact-input" id="phone" name="phone" placeholder="Phone Number" type="tel">
+                    </li>
+                    <li class="contact-ul__li">
+                        <label class="contact-label" for="enquiry">Enquiry</label>
+                        <textarea class="contact-input" id="enquiry" name="enquiry" placeholder="Enquiry" required=""></textarea>
+                    </li>
+                </ul>
+                <button class="contact-submit" type="submit">SEND</button>
+            </form>
+        </div>
+
+        <div class="social-contact">
+            <ul class="social-ul">
+                <li class="social-li">
+                    <div class="social-svg"><?xml version="1.0" encoding="iso-8859-1"?>
+                        <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                             viewBox="0 0 384 384" style="enable-background:new 0 0 384 384;" xml:space="preserve">
+                        <g>
+                            <g>
+                                <path d="M353.188,252.052c-23.51,0-46.594-3.677-68.469-10.906c-10.719-3.656-23.896-0.302-30.438,6.417l-43.177,32.594
+                                    c-50.073-26.729-80.917-57.563-107.281-107.26l31.635-42.052c8.219-8.208,11.167-20.198,7.635-31.448
+                                    c-7.26-21.99-10.948-45.063-10.948-68.583C132.146,13.823,118.323,0,101.333,0H30.813C13.823,0,0,13.823,0,30.813
+                                    C0,225.563,158.438,384,353.188,384c16.99,0,30.813-13.823,30.813-30.813v-70.323C384,265.875,370.177,252.052,353.188,252.052z"
+                                    />
+                            </g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        </svg>
+                    </div>
+                    <p> 123-456-798</p>
+                </li>
+                <li class="social-li">
+                    <div class="social-svg">
+                        <?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<g>
+	<g>
+		<path d="M467,61H45c-6.927,0-13.412,1.703-19.279,4.51L255,294.789l51.389-49.387c0,0,0.004-0.005,0.005-0.007
+			c0.001-0.002,0.005-0.004,0.005-0.004L486.286,65.514C480.418,62.705,473.929,61,467,61z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M507.496,86.728L338.213,256.002L507.49,425.279c2.807-5.867,4.51-12.352,4.51-19.279V106
+			C512,99.077,510.301,92.593,507.496,86.728z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M4.51,86.721C1.703,92.588,0,99.073,0,106v300c0,6.923,1.701,13.409,4.506,19.274L173.789,256L4.51,86.721z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M317.002,277.213l-51.396,49.393c-2.93,2.93-6.768,4.395-10.605,4.395s-7.676-1.465-10.605-4.395L195,277.211
+			L25.714,446.486C31.582,449.295,38.071,451,45,451h422c6.927,0,13.412-1.703,19.279-4.51L317.002,277.213z"/>
+	</g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+
+                    </div>
+                    <p> email@domain.com</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>Copyright 2013 Birva Design Studio</p>
+    </footer>
+
 
 
 </body>

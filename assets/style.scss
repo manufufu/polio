@@ -13,6 +13,7 @@ html,body{
     font-family: 'PT Sans',sans-serif;
     font-size: 16px;
     -webkit-font-smoothing: antialiased;
+    scroll-behavior: smooth;
 }
 
 h1,h2,h3,h4,h5,h6, a{
@@ -51,6 +52,12 @@ img{
 .container{
     max-width: 75em;
     margin: 0 auto;
+}
+
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0;
 }
 
 .btn{
@@ -190,6 +197,10 @@ img{
 
 // SECTION 2
 
+.section-2{
+    padding: 65px 0;
+}
+
 .icon-cont{
     background: $black-hs;
     border: 2px solid $white;
@@ -213,7 +224,7 @@ img{
 
 .t-icons{
     display:flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
     padding: 0 0.9375em;
@@ -231,7 +242,7 @@ img{
 // SECTION 3
 
 .section-3{
-    padding-top: 5.1875em;
+    padding-top: 65px;
 }
 
 .p-title{
@@ -335,7 +346,7 @@ img{
 // SECTION 4    
 
 .section-4{
-    padding: 40px 0;
+    padding: 65px 0;
 }
 
 .section-4__spacing{
@@ -369,7 +380,7 @@ img{
 // SECTION 5
 
 .section-5{
-    padding: 40px 0;
+    padding: 65px 0;
 }
 
 .skills-desc{
@@ -436,13 +447,17 @@ img{
 // SECTION 6
 
 .section-6{
-    padding: 40px 0;
+    padding: 65px 0;
+}
+
+.projects{
+    min-height: 600px;
 }
 
 .filter-c{
     margin-bottom: 44px;
 }
-.filter{
+.filter-btns{
     display:flex;
     list-style: none;
     justify-content: center;
@@ -472,6 +487,8 @@ img{
     align-items: flex-start;
     flex-direction: column;
     overflow: hidden;
+    opacity: 1;
+    transition: all 0.4s ease-in-out;
     &:hover{
         .project-desc{
             background: rgba(255,255,255,1);
@@ -482,6 +499,14 @@ img{
             transform: scale(1.2,1.2);
         }
     }
+}
+
+.project-flex--fade{
+    opacity: 0;
+}
+
+.display-none{
+    display:none;
 }
 
 .projet-img{
@@ -500,3 +525,107 @@ img{
 }
 
 
+// SECTION 7
+
+.section-7{
+    padding: 65px 0;
+}
+
+.contact-form{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    max-width: 25em;
+    opacity: 1;
+    transition: all 0.2s ease-out 0s;
+}
+
+.contact-label{
+    visibility: hidden;
+    border: 0 none;
+    clip: rect(0px, 0px, 0px, 0px);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.contact-ul{
+    width: 100%;
+    list-style: none;
+}
+
+.contact-ul__li{
+    margin-bottom: 0.8em;
+}
+
+.contact-input{
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.075);
+    border: 1px solid rgba(0, 0, 0, .03);
+    color: $black-hs;
+    display: block;
+    padding: 0.8em;
+    resize: none;
+    transition: all 0.2s ease-out 0s;
+    width: 100%;
+    font-family: inherit;
+    font-size: 100%;
+    &:focus{
+        border: 1px solid $white;
+    }
+}
+
+.contact-submit{
+    background: none repeat scroll 0 0 $black-hs;
+    border: 0 none;
+    color: $white;
+    display: block;
+    font-weight: normal;
+    padding: 0.8em 0;
+    transition: all 0.2s ease-out 0s;
+    width: 100%;
+    box-shadow: none;
+}
+
+.social-contact{
+    margin-top: 100px;
+}
+
+.social-ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.social-svg{
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8px;
+    svg{
+        width: 17px;
+        height: auto;
+    }
+}
+
+.social-li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.footer{
+    padding: 25px 0;
+    background-color: $black-hs;
+    text-align: center;
+    p{
+        color: $white;
+        font-size: 1em;
+    }
+}
