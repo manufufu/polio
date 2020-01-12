@@ -58,9 +58,9 @@ button, input, select, textarea {
 }
 
 .btn {
-  padding: 18px 28px 18px 28px;
+  padding: 1.125em 1.75em 1.125em 1.75em;
   display: inline-block;
-  font-size: 12px;
+  font-size: 0.75em;
   font-weight: 900;
   cursor: pointer;
   -webkit-transition: all 0.2s ease-out 0s;
@@ -98,9 +98,9 @@ button, input, select, textarea {
 }
 
 .parallax {
-  height: 145px;
+  height: 9.0625em;
   position: absolute;
-  bottom: -1px;
+  bottom: -0.0625em;
   width: 100%;
   max-width: 100%;
   display: block;
@@ -108,8 +108,8 @@ button, input, select, textarea {
 }
 
 .ampersand {
-  width: 19px;
-  margin: 0 8px -15px 6px;
+  width: 1.1875em;
+  margin: 0 0.5em -0.9375em 0.375em;
 }
 
 .header {
@@ -117,7 +117,7 @@ button, input, select, textarea {
   padding-top: 1.375em;
   padding-bottom: 1.25em;
   position: fixed;
-  top: 0px;
+  top: 0;
   width: 100%;
   overflow: hidden;
   -webkit-transition: all 1s;
@@ -153,12 +153,12 @@ button, input, select, textarea {
 }
 
 .header-menu-a {
-  font-size: 14px;
+  font-size: 0.875em;
   font-weight: normal;
-  letter-spacing: 1px;
+  letter-spacing: 0.0625em;
   line-height: normal;
   color: #FFFFFF;
-  padding: 5px 5px 0 20px;
+  padding: 0.3125em 0.3125em 0 1.25em;
   font-family: inherit;
 }
 
@@ -202,7 +202,7 @@ button, input, select, textarea {
 .h2--slide {
   font-size: 1em;
   margin-bottom: 0.625em;
-  letter-spacing: 2px;
+  letter-spacing: 0.125em;
 }
 
 .btn--slide {
@@ -210,12 +210,12 @@ button, input, select, textarea {
 }
 
 .section-2 {
-  padding: 65px 0;
+  padding: 4.0625em 0;
 }
 
 .icon-cont {
   background: #1B2B3B;
-  border: 2px solid #FFFFFF;
+  border: 0.125em solid #FFFFFF;
   padding: 1.5625em;
   -webkit-transition: all 0.4s ease-in-out 0s;
   -o-transition: all 0.4s ease-in-out 0s;
@@ -228,7 +228,7 @@ button, input, select, textarea {
 }
 .icon-cont:hover {
   background: none;
-  border: 2px solid #1B2B3B;
+  border: 0.125em solid #1B2B3B;
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
@@ -257,15 +257,15 @@ button, input, select, textarea {
 }
 
 .t-icons__title {
-  margin: 10px 0 0 0;
+  margin: 0.625em 0 0 0;
 }
 
 .t-icons__tx {
-  margin: 10px 0;
+  margin: 0.625em 0;
 }
 
 .section-3 {
-  padding-top: 65px;
+  padding-top: 4.0625em;
 }
 
 .p-title {
@@ -306,18 +306,18 @@ button, input, select, textarea {
 .surprise-box {
   width: 90%;
   margin: 0 auto;
-  height: 230px;
+  height: 14.375em;
 }
 
 .surprise-box__back-box,
 .surprise-box__front-box {
   width: 100%;
   height: 100%;
-  padding: 20px 10px;
+  padding: 1.25em 0.625em;
 }
 
 .surprise-box {
-  border: 10px solid rgba(0, 0, 0, 0.03);
+  border: 0.625em solid rgba(0, 0, 0, 0.03);
   margin: 0 auto;
   overflow: hidden;
   position: relative;
@@ -339,7 +339,7 @@ button, input, select, textarea {
 
 .surprise-box__front-box {
   background-color: #ECECEC;
-  border-top: 1px solid #ECECEC;
+  border-top: 0.0625em solid #ECECEC;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -377,20 +377,20 @@ button, input, select, textarea {
 }
 
 .surprise-box__title {
-  font-size: 18px;
+  font-size: 1.125em;
 }
 
 .icon {
-  width: 60px;
+  width: 3.75em;
   height: auto;
 }
 
 .section-4 {
-  padding: 65px 0;
+  padding: 4.0625em 0;
 }
 
 .section-4__spacing {
-  padding-top: 40px;
+  padding-top: 2.5em;
 }
 
 .year {
@@ -420,28 +420,28 @@ button, input, select, textarea {
 }
 
 .company {
-  font-size: 16px;
+  font-size: 1em;
 }
 
 .section-5 {
-  padding: 65px 0;
+  padding: 4.0625em 0;
 }
 
 .skills-desc {
   text-align: center;
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 1.125em;
+  line-height: 1.5em;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 2.5em;
 }
 
 .skill-slider {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 30px 30px 0;
+  padding: 1.875em 1.875em 0;
   width: 100%;
-  max-width: 800px;
+  max-width: 50em;
   margin: 0 auto;
 }
 
@@ -451,8 +451,8 @@ button, input, select, textarea {
   width: 100%;
 }
 .skill-slider_slide svg {
-  width: 140px;
-  height: 140px;
+  width: 8.75em;
+  height: 8.75em;
 }
 .skill-slider_slide:hover .skill-slider_fader {
   opacity: 1;
@@ -473,14 +473,14 @@ button, input, select, textarea {
 
 .skill-slider_fader {
   position: absolute;
-  padding: 10px 20px;
+  padding: 0.625em 1.25em;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   opacity: 0;
   background: #1B2B3B;
-  border-radius: 5px;
+  border-radius: 0.3125em;
   width: 80%;
   margin: 0 auto;
   -webkit-transition: all 0.4s ease-in-out 0s;
@@ -502,15 +502,15 @@ button, input, select, textarea {
 }
 
 .section-6 {
-  padding: 65px 0;
+  padding: 4.0625em 0;
 }
 
 .projects {
-  min-height: 600px;
+  min-height: 37.5em;
 }
 
 .filter-c {
-  margin-bottom: 44px;
+  margin-bottom: 2.75em;
 }
 
 .filter-btns {
@@ -525,12 +525,12 @@ button, input, select, textarea {
 
 .filter__blck {
   display: inline-block;
-  margin-right: 22px;
+  margin-right: 1.375em;
 }
 
 .btn--white {
   background: none;
-  border: 1px solid #1B2B3B;
+  border: 0.0625em solid #1B2B3B;
   color: #1B2B3B;
   text-transform: uppercase;
   font-weight: normal;
@@ -593,14 +593,14 @@ button, input, select, textarea {
 .project-desc {
   background: #efefef;
   text-align: center;
-  padding: 8px 5px;
+  padding: 0.5em 0.3125em;
   width: 100%;
   background: rgba(241, 241, 241, 0.8);
   z-index: 2;
 }
 
 .section-7 {
-  padding: 65px 0;
+  padding: 4.0625em 0;
 }
 
 .contact-form {
@@ -629,12 +629,12 @@ button, input, select, textarea {
   visibility: hidden;
   border: 0 none;
   clip: rect(0px, 0px, 0px, 0px);
-  height: 1px;
-  margin: -1px;
+  height: 0.0625em;
+  margin: -0.0625em;
   overflow: hidden;
   padding: 0;
   position: absolute;
-  width: 1px;
+  width: 0.0625em;
 }
 
 .contact-ul {
@@ -648,7 +648,7 @@ button, input, select, textarea {
 
 .contact-input {
   background: none repeat scroll 0 0 rgba(0, 0, 0, 0.075);
-  border: 1px solid rgba(0, 0, 0, 0.03);
+  border: 0.0625em solid rgba(0, 0, 0, 0.03);
   color: #1B2B3B;
   display: block;
   padding: 0.8em;
@@ -661,7 +661,7 @@ button, input, select, textarea {
   font-size: 100%;
 }
 .contact-input:focus {
-  border: 1px solid #FFFFFF;
+  border: 0.0625em solid #FFFFFF;
 }
 
 .contact-submit {
@@ -680,7 +680,7 @@ button, input, select, textarea {
 }
 
 .social-contact {
-  margin-top: 100px;
+  margin-top: 6.25em;
 }
 
 .social-ul {
@@ -703,10 +703,10 @@ button, input, select, textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: 8px;
+  margin-right: 0.5em;
 }
 .social-svg svg {
-  width: 17px;
+  width: 1.0625em;
   height: auto;
 }
 
@@ -720,11 +720,11 @@ button, input, select, textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 20px;
+  padding: 0 1.25em;
 }
 
 .footer {
-  padding: 25px 0;
+  padding: 1.5625em 0;
   background-color: #1B2B3B;
   text-align: center;
 }
