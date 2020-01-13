@@ -1,6 +1,20 @@
-@media screen and (max-device-width: 736px) and (min-device-width: 1px) {
+@media screen and (max-device-width: 782px) and (min-device-width: 1px) {
   html, body {
     font-size: 14px;
+  }
+
+  .header-menu {
+    display: none;
+  }
+
+  .burger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .secret-menu {
+    display: block;
   }
 
   .parallax {

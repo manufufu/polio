@@ -123,7 +123,6 @@ button, input, select, textarea {
     overflow: hidden;
     transition: all 1s;
     z-index: 10;
-    position: relative;
 }
 
 .logo-txt{
@@ -132,6 +131,7 @@ button, input, select, textarea {
 
 .grid-template--header{
     grid-template-columns: 25% calc(75% - .5em);
+    padding:0.3125em 0;
 }
 
 .header-menu{
@@ -139,7 +139,6 @@ button, input, select, textarea {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    display: none;
 }
 
 .header-menu-li{
@@ -157,25 +156,23 @@ button, input, select, textarea {
 }
 
 .burger{
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
     width: 100%;
+    display: none;
 }
 
-.burger_c{
-    &:hover{
-        .burger_line{
-            &:first-child{
-                transform: rotate(49deg) translateY(5px) translateX(7px);
-            }
-            &:nth-child(2){
-                opacity: 0;
-            }
-            &:last-child{
-                transform: rotate(-50deg) translateY(-5px) translateX(6px);
-            }
+.burger_c--active{
+    .burger_line{
+        &:first-child{
+            transform: rotate(49deg) translateY(5px) translateX(7px);
+        }
+        &:nth-child(2){
+            opacity: 0;
+        }
+        &:last-child{
+            transform: rotate(-50deg) translateY(-5px) translateX(6px);
         }
     }
 }
@@ -198,11 +195,18 @@ button, input, select, textarea {
    left: 0;
    width: 100%;
    background: $black-hs;
-   margin-top: 15px;
+   display:none;
 }
 
 .secret-ul{
     list-style: none;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.6s ease-in-out;
+}
+
+.secret-ul--show{
+    max-height: 500px;
 }
 
 .secret-menu-a{
@@ -216,6 +220,7 @@ button, input, select, textarea {
     background: url("02-HomeSlider.jpg") center center no-repeat;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .hero-slider{

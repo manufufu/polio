@@ -2,6 +2,8 @@ $(document).ready(function(){
 
     let btnCnt = document.querySelector(".filter-btns");
     let filterThis = [...document.querySelectorAll(".project-flex")];
+    let burgerMenu = document.querySelector(".burger_c");
+    let secretMenu = document.querySelector(".secret-ul");
 
     $('.skill-slider').slick({
         dots: false,
@@ -18,6 +20,11 @@ $(document).ready(function(){
 
         if (e.target.classList.contains("btn")) {
             let filter = e.target.dataset.filter;
+            [...btnCnt.querySelectorAll("button")].map( button => {
+                button.classList.remove("btn--white--active");
+            })
+            let button = document.querySelector(`[data-filter="${filter}"]`);
+            button.classList.toggle("btn--white--active");
             if (filter === "*") {
                 animationThing();
             } else {
@@ -26,6 +33,11 @@ $(document).ready(function(){
             }
         }
 
+    });
+
+    burgerMenu.addEventListener("click", function(){
+        secretMenu.classList.toggle("secret-ul--show");
+        this.classList.toggle("burger_c--active");
     });
 
     function animationThing() {
