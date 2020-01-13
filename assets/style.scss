@@ -52,6 +52,8 @@ img{
 .container{
     max-width: 75em;
     margin: 0 auto;
+    padding: 0 1.25em;
+    position: relative;
 }
 
 button, input, select, textarea {
@@ -114,12 +116,14 @@ button, input, select, textarea {
     background:$black-hs;
     padding-top: 1.375em;
     padding-bottom: 1.25em;
+    padding: 1.375em 1.25em 1.25em 1.25em;
     position: fixed;
     top: 0;
     width: 100%;
     overflow: hidden;
     transition: all 1s;
     z-index: 10;
+    position: relative;
 }
 
 .logo-txt{
@@ -135,6 +139,7 @@ button, input, select, textarea {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    display: none;
 }
 
 .header-menu-li{
@@ -149,6 +154,60 @@ button, input, select, textarea {
     color: $white;
     padding: 0.3125em 0.3125em 0 1.25em;
     font-family: inherit;
+}
+
+.burger{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.burger_c{
+    &:hover{
+        .burger_line{
+            &:first-child{
+                transform: rotate(49deg) translateY(5px) translateX(7px);
+            }
+            &:nth-child(2){
+                opacity: 0;
+            }
+            &:last-child{
+                transform: rotate(-50deg) translateY(-5px) translateX(6px);
+            }
+        }
+    }
+}
+
+.burger_line{
+    margin-bottom: 5px;
+    width:30px;
+    height: 3px;
+    background:$white;
+    border-radius: 5px;
+    transition: all 0.4s ease;
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+
+.secret-menu{
+   position: relative;
+   top: 100%;
+   left: 0;
+   width: 100%;
+   background: $black-hs;
+   margin-top: 15px;
+}
+
+.secret-ul{
+    list-style: none;
+}
+
+.secret-menu-a{
+    @extend .header-menu-a;
+    padding-left: 0;
 }
 
 // SECTION 1
@@ -537,6 +596,7 @@ button, input, select, textarea {
     align-items: center;
     flex-direction: column;
     margin: auto;
+    padding: 0 1em;
     max-width: 25em;
     opacity: 1;
     transition: all 0.2s ease-out 0s;
@@ -629,3 +689,4 @@ button, input, select, textarea {
         font-size: 1em;
     }
 }
+
