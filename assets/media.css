@@ -31,9 +31,11 @@
   }
 }
 @media screen and (max-device-width: 500px) and (min-device-width: 1px) {
-  .grid-template--3 {
-    -ms-grid-columns: 50% 50%;
-    grid-template-columns: 50% 50%;
+  .grid-template--3,
+.grid-column--2,
+.grid-column--4 {
+    -ms-grid-columns: 100%;
+    grid-template-columns: 100%;
   }
 
   .skill-slider {
@@ -52,12 +54,6 @@
   }
 }
 @media screen and (max-device-width: 380px) and (min-device-width: 1px) {
-  .grid-template--3,
-.grid-column--4 {
-    -ms-grid-columns: 100%;
-    grid-template-columns: 100%;
-  }
-
   .social-ul {
     display: -webkit-box;
     display: -ms-flexbox;
