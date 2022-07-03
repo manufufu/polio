@@ -6,11 +6,15 @@
           box-sizing: border-box;
 }
 
-html, body {
-  font-family: 'PT Sans',sans-serif;
-  font-size: 16px;
-  -webkit-font-smoothing: antialiased;
+html {
+  font-size: 10px;
   scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'PT Sans',sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 1.6rem;
 }
 
 h1, h2, h3, h4, h5, h6, a {
@@ -121,14 +125,32 @@ button, input, select, textarea {
   z-index: 10;
 }
 
+.header[open='true'] .secret-ul {
+  max-height: 50rem;
+}
+
+.header[open='true'] .burger .burger_line:first-child {
+  -webkit-transform: rotate(49deg) translateY(0.5rem) translateX(0.7rem);
+          transform: rotate(49deg) translateY(0.5rem) translateX(0.7rem);
+}
+
+.header[open='true'] .burger .burger_line:nth-child(2) {
+  opacity: 0;
+}
+
+.header[open='true'] .burger .burger_line:last-child {
+  -webkit-transform: rotate(-50deg) translateY(-0.5rem) translateX(0.6rem);
+          transform: rotate(-50deg) translateY(-0.5rem) translateX(0.6rem);
+}
+
 .logo-txt {
   color: #FFFFFF;
 }
 
 .grid-template--header {
-  -ms-grid-columns: 25% calc(75% - .5em);
-      grid-template-columns: 25% calc(75% - .5em);
-  padding: 0.3125em 0;
+  -ms-grid-columns: auto 1fr;
+      grid-template-columns: auto 1fr;
+  padding: 0.5rem 0;
 }
 
 .header-menu {
@@ -149,13 +171,22 @@ button, input, select, textarea {
 }
 
 .header-menu-a, .secret-menu-a {
-  font-size: 0.875em;
+  font-size: 1.4rem;
   font-weight: normal;
-  letter-spacing: 0.0625em;
+  letter-spacing: 0.1rem;
   line-height: normal;
   color: #FFFFFF;
-  padding: 0.3125em 0.3125em 0 1.25em;
+  padding: 0 1.5rem;
   font-family: inherit;
+}
+
+.burger-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .burger {
@@ -169,30 +200,21 @@ button, input, select, textarea {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  width: 100%;
   display: none;
+  background-color: transparent;
+  border: none;
 }
 
-.burger_c--active .burger_line:first-child {
-  -webkit-transform: rotate(49deg) translateY(5px) translateX(7px);
-          transform: rotate(49deg) translateY(5px) translateX(7px);
-}
-
-.burger_c--active .burger_line:nth-child(2) {
-  opacity: 0;
-}
-
-.burger_c--active .burger_line:last-child {
-  -webkit-transform: rotate(-50deg) translateY(-5px) translateX(6px);
-          transform: rotate(-50deg) translateY(-5px) translateX(6px);
+.burger_c {
+  pointer-events: none;
 }
 
 .burger_line {
-  margin-bottom: 5px;
-  width: 30px;
-  height: 3px;
+  margin-bottom: 0.5rem;
+  width: 3rem;
+  height: 0.3rem;
   background: #FFFFFF;
-  border-radius: 5px;
+  border-radius: 0.5rem;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
@@ -216,10 +238,6 @@ button, input, select, textarea {
   max-height: 0;
   -webkit-transition: max-height 0.6s ease-in-out;
   transition: max-height 0.6s ease-in-out;
-}
-
-.secret-ul--show {
-  max-height: 500px;
 }
 
 .secret-menu-a {
@@ -311,18 +329,18 @@ button, input, select, textarea {
   opacity: 0;
 }
 
-.icon-cont:hover {
+.icon-cont:hover, .icon-cont:focus {
   background: none;
   border: 0.125em solid #1B2B3B;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
 
-.icon-cont:hover .icon-cont__white {
+.icon-cont:hover .icon-cont__white, .icon-cont:focus .icon-cont__white {
   opacity: 0;
 }
 
-.icon-cont:hover .icon-cont__black {
+.icon-cont:hover .icon-cont__black, .icon-cont:focus .icon-cont__black {
   opacity: 1;
 }
 
@@ -415,6 +433,8 @@ button, input, select, textarea {
 }
 
 .surprise-box__scroller {
+  background-color: transparent;
+  border: none;
   top: 0;
   -webkit-transition: top 0.6s ease 0s;
   transition: top 0.6s ease 0s;
@@ -424,7 +444,7 @@ button, input, select, textarea {
   text-align: center;
 }
 
-.surprise-box__scroller:hover {
+.surprise-box__scroller:hover, .surprise-box__scroller:focus {
   top: -100%;
 }
 
@@ -564,6 +584,11 @@ button, input, select, textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.skill-slider_svg-c img {
+  max-width: 14rem;
+  height: auto;
 }
 
 .skill-slider_fader {
@@ -722,7 +747,7 @@ button, input, select, textarea {
 .contact-label {
   visibility: hidden;
   border: 0 none;
-  clip: rect(0px, 0px, 0px, 0px);
+  clip: rect(0, 0, 0, 0);
   height: 0.0625em;
   margin: -0.0625em;
   overflow: hidden;
@@ -770,6 +795,7 @@ button, input, select, textarea {
   width: 100%;
   -webkit-box-shadow: none;
           box-shadow: none;
+  cursor: pointer;
 }
 
 .social-contact {
@@ -815,7 +841,7 @@ button, input, select, textarea {
       -ms-flex-align: center;
           align-items: center;
   padding: 0 1.25em;
-  font-size: 16px;
+  font-size: inherit;
   font-weight: 400;
 }
 

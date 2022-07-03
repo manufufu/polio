@@ -10,15 +10,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
     <link rel="stylesheet" href="assets/style.css">
     <link rel="stylesheet" href="assets/media.css">
-    <!-- <script src="assets/jquery-3.4.1.min.js" defer></script>
-    <script src="assets/slick.min.js" defer></script>-->
-    <script src="assets/frameworks.min.js" defer></script>
-    <script src="assets/script.js" defer></script>
+    <!-- <script src="assets/jquery-3.4.1.min.js" async="async"></script>
+    <script src="assets/slick.min.js" defer="defer"></script> -->
+    <script src="assets/frameworks.min.js" async="async"></script>
+    <script src="assets/script.js" defer="defer"></script>
 </head>
 
 <body>
 
-    <header class="header">
+    <header class="header" open="false">
         <div class="container">
             <div class="grid grid-template--header">
                 <div class="logo">
@@ -34,12 +34,14 @@
                     <!-- <li class="header-menu-li"><a href="#works" class="header-menu-a">WORKS</a></li> -->
                     <li class="header-menu-li"><a href="#contact" class="header-menu-a">CONTACT</a></li>
                 </ul>
-                <div class="burger">
-                   <div class="burger_c">   
-                    <div class="burger_line"></div>
-                    <div class="burger_line"></div>
-                    <div class="burger_line"></div>
-                   </div>
+                <div class="burger-container">
+                    <button class="burger">
+                        <div class="burger_c">   
+                            <div class="burger_line"></div>
+                            <div class="burger_line"></div>
+                            <div class="burger_line"></div>
+                        </div>
+                    </button>
                 </div>
             </div>
             <div class="secret-menu">
@@ -48,7 +50,7 @@
                     <li class="secret-li"><a href="#whoiam" class="secret-menu-a">WHO I AM</a></li>
                     <li class="secret-li"><a href="#experience" class="secret-menu-a">EXPERIENCES</a></li>
                     <li class="secret-li"><a href="#skills" class="secret-menu-a">MY SKILLS</a></li>
-                    <li class="secret-li"><a href="#works" class="secret-menu-a">WORKS</a></li>
+                    <!-- <li class="secret-li"><a href="#works" class="secret-menu-a">WORKS</a></li> -->
                     <li class="secret-li"><a href="#contact" class="secret-menu-a">CONTACT</a></li>
                 </ul>
             </div>
@@ -80,26 +82,26 @@
 
             <div class="grid grid-template--3">
                 <div class="t-icons">
-                    <span class="icon-cont">
+                    <button class="icon-cont" type="button">
                         <img class="icon-cont__white" width="40" height="40" src="./assets/smiley-white.svg" alt="Smiley">
                         <img class="icon-cont__black" width="40" height="40" src="./assets/smiley.svg" alt="Smiley">
-                    </span>
+                    </button>
                     <h4 class="t-icons__title">WHO I AM</h4>
                     <p class="t-icons__tx">I’m usually a lone wolf in social settings, unless my pack decides to accompany me, people say I’m naturally quiet. This is partially true. While I may come out as shy and reserved to people who don’t know me.</p>
                 </div>
                 <div class="t-icons">
-                    <span class="icon-cont">
+                    <button class="icon-cont" type="button"> 
                         <img class="icon-cont__white" width="40" height="40" src="./assets/microphone-white.svg" alt="Microphone">
                         <img class="icon-cont__black" width="40" height="40" src="./assets/microphone.svg" alt="Microphone">
-                    </span>
+                    </button>
                     <h4 class="t-icons__title">WHAT I DO</h4>
                     <p class="t-icons__tx">Architects and develops websites and applications using web technologies, which run on the Open Web Platform or act as compilation input for non-web platform environments.</p>
                 </div>
                 <div class="t-icons">
-                    <span class="icon-cont">
+                    <button class="icon-cont" type="button">
                         <img class="icon-cont__white" width="40" height="40" src="./assets/wand-white.svg" alt="Wand">
                         <img class="icon-cont__black" width="40" height="40" src="./assets/wand.svg" alt="Wand">
-                    </span>
+                    </button>
                     <h4 class="t-icons__title">HOW I WORK</h4>
                     <p class="t-icons__tx">I take website design files and convert them into HTML, JavaScript (JS) and/or CSS code; the core elements of front-end development.</p>
                 </div>
@@ -117,19 +119,19 @@
             </div>
             <div class="grid grid-column--4 section-3__spacing">
                 <div class="surprise-box">
-                    <div class="surprise-box__scroller">
-                        <div class="surprise-box__front-box">
+                    <button class="surprise-box__scroller" type="button">
+                        <div class="surprise-box__front-box">   
                             <img class="icon" src="assets/design.png" alt="Design">
                             <h4 class="surprise-box__title">Inspect the overall design</h4>
                         </div>
                         <div class="surprise-box__back-box">
                             <p>I start by inspecting the overall design of a website before coding it, grouping the components that will have the similar styles for reusability.</p>
                         </div>
-                    </div>
+                    </button>
 
                 </div>
                 <div class="surprise-box">
-                    <div class="surprise-box__scroller">
+                    <button class="surprise-box__scroller" type="button">
                         <div class="surprise-box__front-box">
                             <img class="icon" src="assets/data.png" alt="Codes">
                             <h4 class="surprise-box__title">Start coding</h4>
@@ -137,11 +139,10 @@
                         <div class="surprise-box__back-box">
                             <p>Code a static files which will be modified later for dynamic output.</p>
                         </div>
-                    </div>
-
+                    </button>
                 </div>
                 <div class="surprise-box">
-                    <div class="surprise-box__scroller">
+                    <button class="surprise-box__scroller" type="button">
                         <div class="surprise-box__front-box">
                             <img class="icon" src="assets/internet.png" alt="Responsive">
                             <h4 class="surprise-box__title">Responsive Design</h4>
@@ -149,11 +150,10 @@
                         <div class="surprise-box__back-box">
                             <p>Create a responsive design of the static file, that works well on different devices.</p>
                         </div>
-                    </div>
-
+                    </button>
                 </div>
                 <div class="surprise-box">
-                    <div class="surprise-box__scroller">
+                    <button class="surprise-box__scroller" type="button">
                         <div class="surprise-box__front-box">
                             <img class="icon" src="assets/rocket.png" alt="Rocket launch">
                             <h4 class="surprise-box__title">Launch</h4>
@@ -161,8 +161,7 @@
                         <div class="surprise-box__back-box">
                             <p>We add energy, experience and influence to start your project right.</p>
                         </div>
-                    </div>
-
+                    </button>
                 </div>
             </div>
     </section>
@@ -348,7 +347,8 @@
                 <button class="contact-submit" type="submit">SEND</button>
             </form>
         </div>
-
+        
+        <!-- 
         <div class="social-contact">
             <ul class="social-ul">
                 <li class="social-li">
@@ -368,6 +368,7 @@
                 </li>
             </ul>
         </div>
+         -->
     </section>
 
     <footer class="footer">

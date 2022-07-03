@@ -1,6 +1,6 @@
 @media screen and (max-device-width: 782px) and (min-device-width: 1px){
-    html,body{
-        font-size: 14px;
+    html{
+        font-size: 11px;
     }
 
     .header-menu{
@@ -8,7 +8,7 @@
     }
 
     .burger{
-        display: flex;
+        display: inline-flex;
     }
 
     .secret-menu{
@@ -16,7 +16,7 @@
     }
 
     .parallax{
-        height: 75px;
+        height: 7.5rem;
     }
 
     .grid-column--4{
@@ -24,7 +24,7 @@
     }
 
     .projects{
-        min-height: 30em;
+        min-height: 48rem;
     }
 }
 

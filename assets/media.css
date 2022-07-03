@@ -1,27 +1,27 @@
 @media screen and (max-device-width: 782px) and (min-device-width: 1px) {
-  html, body {
-    font-size: 14px;
+  html {
+    font-size: 11px;
   }
   .header-menu {
     display: none;
   }
   .burger {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
   }
   .secret-menu {
     display: block;
   }
   .parallax {
-    height: 75px;
+    height: 7.5rem;
   }
   .grid-column--4 {
     -ms-grid-columns: 50% 50%;
         grid-template-columns: 50% 50%;
   }
   .projects {
-    min-height: 30em;
+    min-height: 48rem;
   }
 }
 
